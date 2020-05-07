@@ -4,7 +4,7 @@ const server = express()
 
 server.use(express.json())
 
-const Port = 5000
+const Port = process.env.PORT || 5000
 
 server.use("/api/posts", postsRouter)
 
